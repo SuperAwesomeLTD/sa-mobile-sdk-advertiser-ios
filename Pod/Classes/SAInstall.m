@@ -5,6 +5,14 @@
 
 #import "SAInstall.h"
 
+#if defined(__has_include)
+#if __has_include(<SuperAwesomeAdvertiser/SuperAwesomeAdvertiser-Swift.h>)
+#import <SuperAwesomeAdvertiser/SuperAwesomeAdvertiser-Swift.h>
+#else
+#import "SuperAwesomeAdvertiser-Swift.h"
+#endif
+#endif
+
 @implementation SAInstall
 
 /**
@@ -12,7 +20,7 @@
  */
 - (id) init {
     if (self = [super init]) {
-        // do nothing
+        [SADependencyContainer initModules: SAModuleContainer.new];
     }
     
     return self;
@@ -35,6 +43,7 @@
 }
 
 - (NSDictionary*) getInstallHeader {
+    
     return @{
              @"Content-Type": @"application/json",
              @"User-Agent": [SAAdvUtils getUserAgent]
@@ -53,7 +62,7 @@
     
     // get the header
     NSDictionary *header = [self getInstallHeader];
-    
+        
     // form main URL
     __block NSMutableString *_mendpoint = [endpoint mutableCopy];
     if (query != nil && query != (NSDictionary*)[NSNull null] && query.allKeys.count > 0) {

@@ -8,6 +8,14 @@
 
 #import "SAAdvUtils.h"
 
+#if defined(__has_include)
+#if __has_include(<SuperAwesomeAdvertiser/SuperAwesomeAdvertiser-Swift.h>)
+#import <SuperAwesomeAdvertiser/SuperAwesomeAdvertiser-Swift.h>
+#else
+#import "SuperAwesomeAdvertiser-Swift.h"
+#endif
+#endif
+
 @implementation SAAdvUtils
 
 + (NSString*) getBundleId {
@@ -15,7 +23,7 @@
 }
 
 + (NSString*) getUserAgent {
-    return [[[UIWebView alloc] initWithFrame:CGRectZero] stringByEvaluatingJavaScriptFromString:@"navigator.userAgent"];
+    return SADependencyContainer.shared.modules.componentModule.userAgent.name;
 }
 
 /**

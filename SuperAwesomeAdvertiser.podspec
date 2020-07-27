@@ -12,7 +12,9 @@ The SuperAwesome Mobile Advertising SDK lets you easily measure installs for you
   s.platform         = :ios, '8.0'
   s.default_subspec  = 'Base'
   s.requires_arc     = true
-
+  s.swift_versions = ['4.2', '5.0']
+  s.static_framework = false
+  
   s.subspec 'Base' do |b|
     b.source_files = 'Pod/Classes/**/*'
   end
