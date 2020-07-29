@@ -5,7 +5,7 @@
 //  Created by Gunhan Sancar on 06/04/2020.
 //
 
-@objc(SADependencyContainer)
+@objc(SAADependencyContainer)
 @available(*, deprecated, message: "Will be deleted")
 public class DependencyContainerObj: NSObject {
     @objc(shared)

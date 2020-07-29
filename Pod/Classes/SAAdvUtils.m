@@ -23,7 +23,7 @@
 }
 
 + (NSString*) getUserAgent {
-    return SADependencyContainer.shared.modules.componentModule.userAgent.name;
+    return SAADependencyContainer.shared.modules.componentModule.userAgent.name;
 }
 
 /**

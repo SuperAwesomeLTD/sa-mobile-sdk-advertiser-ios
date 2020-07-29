@@ -5,7 +5,7 @@
 //  Created by Gunhan Sancar on 04/04/2020.
 //
 
-@objc(SAComponentModuleType)
+@objc(SAAComponentModuleType)
 @available(*, deprecated, message: "Will be deleted")
 public protocol ComponentModuleObjcType {
     var device: DeviceType { get }

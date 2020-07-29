@@ -20,7 +20,7 @@
  */
 - (id) init {
     if (self = [super init]) {
-        [SADependencyContainer initModules: SAModuleContainer.new];
+        [SAADependencyContainer initModules: SAAModuleContainer.new];
     }
     
     return self;

@@ -5,7 +5,7 @@
 //  Created by Gunhan Sancar on 04/04/2020.
 //
 
-@objc(SAModuleContainerType)
+@objc(SAAModuleContainerType)
 @available(*, deprecated, message: "Will be deleted")
 public protocol ModuleContainerType {
     @objc(componentModule)
@@ -15,7 +15,7 @@ public protocol ModuleContainerType {
     var repositoryModule: RepositoryModuleObjcType { get }
 }
 
-@objc(SAModuleContainer)
+@objc(SAAModuleContainer)
 public class ModuleContainer: NSObject, ModuleContainerType {
     lazy public var repositoryModule: RepositoryModuleObjcType = RepositoryModuleObjc()
     lazy public var componentModule: ComponentModuleObjcType = ComponentModuleObjc(dataRepository: repositoryModule.dataRepository)
