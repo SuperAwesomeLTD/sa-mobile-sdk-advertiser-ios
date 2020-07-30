@@ -5,7 +5,7 @@
 //  Created by Gunhan Sancar on 04/04/2020.
 //
 
-@objc(SARepositoryModuleType)
+@objc(SAARepositoryModuleType)
 @available(*, deprecated, message: "Will be deleted")
 public protocol RepositoryModuleObjcType {
     var dataRepository: DataRepositoryType { get }

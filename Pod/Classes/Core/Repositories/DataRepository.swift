@@ -8,12 +8,12 @@
 
 import Foundation
 
-@objc(SADataRepositoryType)
+@objc(SAADataRepositoryType)
 public protocol DataRepositoryType {
     var userAgent: String? { get set }
 }
 
-@objc(SADataRepository)
+@objc(SAADataRepository)
 class DataRepository : NSObject, DataRepositoryType {
     struct Keys {
         internal static let userAgent = "SuperAwesome.DataRepository.Keys.UserAgent"

@@ -10,12 +10,12 @@ import WebKit
 /**
 * Class that returns the current User Agent using WKWebView object.
 */
-@objc(SAUserAgentType)
+@objc(SAAUserAgentType)
 public protocol UserAgentType {
     @objc(name) var name: String { get }
 }
 
-@objc(SAUserAgent)
+@objc(SAAUserAgent)
 public class UserAgent : NSObject, UserAgentType {
     public var name: String
     private var webView: WKWebView?
