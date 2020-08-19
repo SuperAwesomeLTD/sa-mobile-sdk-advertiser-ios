@@ -5,14 +5,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SAdvUnityCallback.h"
-
-#if defined(__has_include)
-#if __has_include(<SuperAwesomeAdvertiserSDK/SAVerifyInstall.h>)
-#import <SuperAwesomeAdvertiserSDK/SAVerifyInstall.h>
-#else
-#import "SAVerifyInstall.h"
-#endif
-#endif
+#import <SuperAwesomeAdvertiser/SAVerifyInstall.h>
 
 extern "C" {
     
