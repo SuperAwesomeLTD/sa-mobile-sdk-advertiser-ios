@@ -1,0 +1,9 @@
+# Left sidebar menu items
+- title: Home
+  url: ""
+  links:
+    - title: Add the SDK
+      url: "docs/add-sdk"
+    - title: Measure installs
+      url: "docs/measure-installs"
+    
