@@ -1,12 +1,12 @@
 ---
 layout: page
-title: AwesomeAds iOS SDK
+title: AwesomeAds Advertiser iOS SDK
 permalink: /
 ---
 
-# iOS Publisher SDK
+# iOS Advertiser SDK
 
-The iOS Publisher SDK (Software Development Kit) lets you to easily add COPPA compliant advertisements to your apps.
+The iOS Advertiser SDK (Software Development Kit) lets you to easily add COPPA compliant advertisements to your apps.
 
 | Info    | Contents  |
 |---------|-----------|
