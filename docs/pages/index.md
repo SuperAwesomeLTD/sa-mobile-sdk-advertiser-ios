@@ -12,7 +12,7 @@ The iOS Publisher SDK (Software Development Kit) lets you to easily add COPPA co
 |---------|-----------|
 | Version   |   {{ site.latest_version }} ([Changelog]({{ site.changelog_url }}))   |
 | Support   |   iOS 10.0+         |
-| GitHub    |   [https://github.com/SuperAwesomeLTD/sa-mobile-sdk-ios]({{ site.repo }})         |
+| GitHub    |   [https://github.com/SuperAwesomeLTD/sa-mobile-sdk-advertiser-ios]({{ site.repo }})         |
 | Contact   |   [{{ site.email }}]({{ site.email }})        |
 | License   |   [GNU Lesser General Public License Version 3]({{ site.license_url }})           |
 
