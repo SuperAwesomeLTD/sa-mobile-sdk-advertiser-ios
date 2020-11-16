@@ -6,4 +6,6 @@
       url: "docs/add-sdk"
     - title: Measure installs
       url: "docs/measure-installs"
+    - title: Data Collection
+      url: "docs/data-collection"
     
